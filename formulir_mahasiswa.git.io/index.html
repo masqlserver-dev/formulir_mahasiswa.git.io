@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css"/>
+    <title>Formulir Pendaftaran Mahasiswa</title>
+    </head>
+<body>
+    <div class="container">
+        <h2>📝 Formulir Pendaftaran Mahasiswa Baru</h2>
+        
+       <form action="submit_data.php" method="post">
+            
+            <div class="form-group">
+                <label for="nama_lengkap">Nama Lengkap:</label>
+                <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nim">NIM (Nomor Induk Mahasiswa):</label>
+                <input type="text" id="nim" name="nim" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prodi">Program Studi:</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilih Program Studi</option>
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="AK">Akuntansi</option>
+                    <option value="MN">Manajemen</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div>
+                    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki_laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat Lengkap:</label>
+                <textarea id="alamat" name="alamat" rows="4" required></textarea>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="submit-button">Daftar Sekarang</button>
+                <button type="reset" class="reset-button">Ulangi Formulir</button>
+            </div>
+
+        </form> 
+    </div> 
+    
+    <script src="asset/js/script.js"></script> 
+</body>
+</html>
